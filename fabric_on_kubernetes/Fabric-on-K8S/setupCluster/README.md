@@ -11,3 +11,4 @@
 export FABRIC_CFG_PATH=$PWD
 
 
+ExecStart=/usr/bin/dockerd --dns=10.254.0.2 --dns-search org1.svc.cluster.local. --dns-search org2.svc.cluster.local. --dns-search default.svc.cluster.local. --dns-search orgorderer1.svc.cluster.local. --dns-search svc.cluster.local. --dns-search cluster.local.  --dns-opt ndots:2 --dns-opt timeout:2 --dns-opt attempts:2 --dns=192.168.1.29
